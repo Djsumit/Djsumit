@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<br><br>
+<section class="section">
+  <div class="options">
+    <a href="live.html" class="option">Live Event Song</a>
+    <a href="djremix.html" class="option">DJ Remix Song</a>
+  </div>
+  <p>Choose the option according to your choice from above. If you want to Download or play Songs The click above options.</p>
+</section>
+<style>
+    .section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f0f0; /* Change to your desired background color */
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.option {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+p {
+  color: #333;
+  font-size: 18px; /* Change to your desired font size */
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
+  
+  .option {
+    padding: 8px 16px;
+    border-radius: 15px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+<style>
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top:360px;
+}
+p{
+    text-colour:white;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top:1000px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  .
+}
+
+</style>
+
+
+
+<footer>
+  <div class="footer-content">
+    <p1>©Sumit Dj High-Tech 2024. All Rights Reserved</p>
+    <div class="social-icons">
+    <a href="https://www.instagram.com/sumit_dj_hi_tech_banaras?igsh=eTRueGdoMnVmYWdy"><img src="./instagram.png" alt="I" height="30px" width="30px"></a>
+      <a href="https://www.facebook.com/profile.php?id=100026214544862"><img src="./facebook.png" alt="F" height="28px" width="28px"></a>
+      <a href="https://www.twitter.com"><img src="./twitter.png" alt="T" height="30px" width="30px"></a>
+      <a href="https://youtube.com/@sumit_dj_mixing_mafia?si=a4RSNU3Z2skXGPhB"><img src="./youtube.png" alt="Y" height="30px" width="30px"></a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

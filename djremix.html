@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>YouTube Song Section</title>
+  
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><br>
+
+<section class="container">
+  <div class="item">
+    <img src="./Bhojpuri1.jpg" alt="Image">
+    <h2>DJ Remix Song || Bhojpuri Song|| New Dj remix Song</h2>
+    <div class="options">
+      <a class="play-button" href="Play-download.html">Play</a>
+      <a class="download-button" href="Play-download.html">Download</a>
+    </div>
+  </div>
+</section>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.item {
+  width: 90%;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item h2 {
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.play-button, .download-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration:none;
+}
+
+.play-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.download-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.play-button:hover, .download-button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (min-width: 600px) {
+  .item {
+    width: 90%;
+  }
+  .play-button, .download-button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+}
+
+</style>
+ <style>
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top:60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top:1000px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  .
+}
+
+</style>
+
+
+
+<footer>
+  <div class="footer-content">
+    <p>©Sumit Dj High-Tech 2024. All Rights Reserved</p>
+    <div class="social-icons">
+          <a href="https://www.instagram.com/sumit_dj_hi_tech_banaras?igsh=eTRueGdoMnVmYWdy"><img src="./instagram.png" alt="I" height="30px" width="30px"></a>
+      <a href="https://www.facebook.com/profile.php?id=100026214544862"><img src="./facebook.png" alt="F" height="28px" width="28px"></a>
+      <a href="https://www.twitter.com"><img src="./twitter.png" alt="T" height="30px" width="30px"></a>
+      <a href="https://youtube.com/@sumit_dj_mixing_mafia?si=a4RSNU3Z2skXGPhB"><img src="./youtube.png" alt="Y" height="30px" width="30px"></a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        width: 97%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        height: 150px;
+    }
+
+    .btn {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <center>  <h2>Contact Us</h2></center>
+    <form id="myForm" name="google-sheet">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="mail">Your Mail:</label>
+            <input type="text" id="mail" name="mail">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+      <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzHF56mvyulbGpdI_Ugc3oE4oEbBuzdsGhBpK5junIy5yLQ9eWFjS2uurNOiFZwqRYOIA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
+          
+          
+          
+          
+          
+          
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var name = document.getElementById('name').value;
+        var mail = document.getElementById('mail').value;
+        var description = document.getElementById('description').value;
+
+        if (name === '' || mail === '' || description === '') {
+            alert('Please fill in all fields.');
+        } else {
+            // Code to submit the form goes here
+            alert('Form submitted successfully!');
+            // You can replace the alert with an AJAX call to submit the form data
+            
+            // Refresh the page after submission
+            setTimeout(function() {
+                location.reload();
+            }, 1000); // reload after 1 second
+        }
+    });
+</script>
+<style>
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top:60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top:1000px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  .
+}
+
+</style>
+
+
+
+<footer>
+  <div class="footer-content">
+    <p>©Sumit Dj High-Tech 2024. All Rights Reserved</p>
+    <div class="social-icons">
+          <a href="https://www.instagram.com/sumit_dj_hi_tech_banaras?igsh=eTRueGdoMnVmYWdy"><img src="./instagram.png" alt="I" height="30px" width="30px"></a>
+      <a href="https://www.facebook.com/profile.php?id=100026214544862"><img src="./facebook.png" alt="F" height="28px" width="28px"></a>
+      <a href="https://www.twitter.com"><img src="./twitter.png" alt="T" height="30px" width="30px"></a>
+      <a href="https://youtube.com/@sumit_dj_mixing_mafia?si=a4RSNU3Z2skXGPhB"><img src="./youtube.png" alt="Y" height="30px" width="30px"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

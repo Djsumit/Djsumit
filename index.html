@@ -1,0 +1,208 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuous Animated Typing with Stylish Fonts and Colors</title>
+<style>
+  /* Styling for the cursor animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange; /* Change color of cursor here */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(28, end), blink-caret .75s step-end infinite;
+    font-family: 'Roboto', sans-serif; /* Change font family here */
+    color: #4CAF50; /* Change text color here */
+  }
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange; /* Change color of cursor here */
+    }
+  }
+</style>
+</head>
+<body>
+
+<center><h1 id="heading" class="typing-animation"></h1></center>
+
+<script>
+  // Text to be typed out
+  var textToType = " Dj Sumit High-tech 🎧";
+  
+  // Function to simulate typing effect
+  function typeEffect(element, text, speed, index) {
+    if (index < text.length) {
+      element.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(function() {
+        typeEffect(element, text, speed, index);
+      }, speed);
+    } else {
+      // Clear the text and start typing again
+      setTimeout(function() {
+        element.innerHTML = '';
+        typeEffect(element, text, speed, 0);
+      }, 2000); // Delay before restarting typing animation (2 seconds)
+    }
+  }
+
+  // Call typeEffect function with desired speed and text
+  var speed = 100; // Typing speed (milliseconds)
+  var heading = document.getElementById('heading');
+  typeEffect(heading, textToType, speed, 0);
+</script>
+
+</body>
+</html>
+
+
+
+    <div class="content">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remix Songs Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .section {
+            padding: 50px;
+            text-align: center;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        
+        .section h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>About</h2>
+        <p>This section contains information about the DJ remix songs, live event remix songs, and Bhojpuri song remix.</p>
+    </div>
+    
+    <div class="section" style="border-color: #FF5733; background-color: #FFD1B3;">
+        <h2>DJ Remix Songs</h2>
+        <p>This section features a collection of DJ remix songs from various artists and genres.</p>
+    </div>
+    
+    <div class="section" style="border-color: #0074D9; background-color: #AED6F1;">
+        <h2>All Live Event Remix Songs</h2>
+        <p>Explore a wide range of remixes of songs performed live at events, concerts, and festivals.</p>
+    </div>
+    
+    <div class="section" style="border-color: #E65100; background-color: #FFCC80;">
+        <h2>Bhojpuri Song Remix</h2>
+        <p>Enjoy remixes of popular Bhojpuri songs that add a unique twist to traditional melodies.</p>
+    </div>
+</body>
+</html>
+
+
+        <!-- Your website content goes here -->
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top:60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top:1000px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  .
+}
+
+</style>
+
+
+
+<footer>
+  <div class="footer-content">
+    <p>©Sumit Dj High-Tech 2024. All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/sumit_dj_hi_tech_banaras?igsh=eTRueGdoMnVmYWdy"><img src="./instagram.png" alt="I" height="30px" width="30px"></a>
+      <a href="https://www.facebook.com/profile.php?id=100026214544862"><img src="./facebook.png" alt="F" height="28px" width="28px"></a>
+      <a href="https://www.twitter.com"><img src="./twitter.png" alt="T" height="30px" width="30px"></a>
+      <a href="https://youtube.com/@sumit_dj_mixing_mafia?si=a4RSNU3Z2skXGPhB"><img src="./youtube.png" alt="Y" height="30px" width="30px"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

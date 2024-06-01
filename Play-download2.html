@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="construction">
+    <h1>This Page is under construction</h1>
+</section>
+<style>
+    body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2; /* Light Gray */
+}
+
+#construction {
+    background-color: #ffd700; /* Yellow */
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333; /* Dark Gray */
+    max-width: 80%;
+    animation: warningAnimation 1s ease infinite alternate; /* Warning animation */
+}
+
+#construction h1 {
+    color: #333; /* Dark Gray */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    #construction {
+        max-width: 90%;
+    }
+}
+
+@keyframes warningAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
