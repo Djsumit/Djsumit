@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="remix.css">
+  <link rel="stylesheet" href="footer.css">
   <title>YouTube Song Section</title>
   
 </head>
@@ -27,7 +28,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Search Engine</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="remix1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -67,183 +68,9 @@
             <p>Not found</p>
         </div>         
     </div>  
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-}
+      <script src="search.js"> </script>
 
-.search-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: #4CAF50;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#search-bar {
-    width: 60%;
-    max-width: 600px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    outline: none;
-}
-
-button {
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration:none;
     
-}
-
-button i {
-    font-size: 16px;
-    text-decoration:none;
-}
-
-button:hover {
-    background-color: #45a049;
-    text-decoration:none;
-}
-
-.results-container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section {
-    width: 95%;
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section img {
-    width: 100%;
-    max-width: 1280px;
-    height: auto;
-}
-
-.buttons {
-    margin: 10px 0;
-    display: flex;
-    gap: 10px;
-    text-decoration:none;
-}
-
-.play-btn, .download-btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration:none;
-}
-
-.play-btn:hover, .download-btn:hover {
-    background-color: #45a049;
-}
-
-.not-found {
-    display: none;
-    color: grey;
-    font-size: 24px;
-    text-align: center;
-}
-
-
-.play-btn, .download-btn a{
-    text-decoration:none;
-    text-decoration:none;
-}
-
-@media (max-width: 600px) {
-    #search-bar {
-        width: 70%;
-    }
-
-    button {
-        padding: 10px 15px;
-    }
-
-    .not-found {
-        font-size: 18px;
-    }
-
-    .play-btn, .download-btn {
-        padding: 10px 15px;
-        text-decoration:none;
-    }
-}
-
-</style>
-    <script>
-        function hideAllSections() {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-}
-
-function search() {
-    const query = document.getElementById('search-bar').value.toLowerCase();
-    const sections = document.querySelectorAll('.section');
-    let found = false;
-
-    if (query === '') {
-        sections.forEach(section => {
-            section.style.display = 'flex';
-        });
-        document.getElementById('not-found').style.display = 'none';
-        return;
-    }
-
-    sections.forEach(section => {
-        const heading = section.querySelector('h2').innerText.toLowerCase();
-        if (heading.includes(query)) {
-            section.style.display = 'flex';
-            found = true;
-        } else {
-            section.style.display = 'none';
-        }
-    });
-
-    document.getElementById('not-found').style.display = found ? 'none' : 'block';
-}
-
-function handleKeyPress(event) {
-    if (event.key === 'Enter') {
-        search();
-    }
-}
-
-document.getElementById('search-bar').addEventListener('keypress', handleKeyPress);
-document.getElementById('search-bar').addEventListener('input', search);
-
-    </script>
 
 
 
@@ -261,7 +88,7 @@ document.getElementById('search-bar').addEventListener('input', search);
     </div>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="remix.js"></script>
 
 </body>
 </html>
